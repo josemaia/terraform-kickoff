@@ -1,6 +1,6 @@
 # My first resources
 
-In this step, we will create a virtual machine and a PostgreSQL database.
+In this step, we will create a virtual machine using infrastructure as code.
 
 ## How to run?
 
@@ -9,6 +9,8 @@ Replace "$name" in all files with your first and last name (e.g. $name) as per s
 Configure the access key to the Blob Storage where you will store the Azure state files. Make sure it is in ARM_ACCESS_KEY environment variable (check script from step 0).
 
 `terraform init` followed by `terraform plan -var project_name=ctwsummit` and `terraform apply -var project_name=ctwsummit` should create the necessary resources.
+
+You will see Terraform handles the order of the apply for you, only creating the subnet after the vnet exists, and so on.
 
 ## What should I have at the end of this step?
 
