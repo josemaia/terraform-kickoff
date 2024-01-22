@@ -2,7 +2,7 @@
 
 This step does nothing, it's just an initial configuration setup to make sure we get Terraform working right with Azure.
 
-We will configure Terraform remote state here - a powerful functionality that will make sure it's not possible for two people to be working at the same time by using **locks**. This is crucial in any real world scenario.
+We will configure Terraform remote state here - a powerful functionality that will make sure it's not possible for two people to be working at the same time by using **locks**. This is crucial in any real world scenario. Azure blob storage also encrypts the state for us, which is pretty cool.
 
 ## How to run?
 
