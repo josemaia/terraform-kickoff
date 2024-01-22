@@ -7,10 +7,10 @@ terraform {
   }
 
   backend "azurerm" {
-    resource_group_name  = "tfstate"
-    storage_account_name = "$name-terraform-state"
-    container_name       = "tfstate"
-    key                  = "terraform.tfstate"
+    resource_group_name  = "$name-terraform-tutorial"
+    storage_account_name = "$nameterraformstate"
+    container_name       = "terraform-state"
+    key                  = "azure-tutorial.tfstate"
   }
 
   required_version = ">= 1.1.0"
