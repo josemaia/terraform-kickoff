@@ -2,6 +2,12 @@
 
 This step does nothing, it's just an initial configuration setup to make sure we get Terraform working right with Azure.
 
-## How to run
+We will configure Terraform remote state here - a powerful functionality that will make sure it's not possible for two people to be working at the same time by using **locks**. This is crucial in any real world scenario.
 
-`terraform init` followed by `terraform plan`
+## How to run?
+
+Replace "$name" in all files with your first and last name (e.g. josemaia) as per step 0.
+
+Configure the access key to the Blob Storage where you will store the Azure state files. Make sure it is in ARM_ACCESS_KEY environment variable (check script from step 0).
+
+`terraform init` followed by `terraform plan` should show you Terraform at work, but do no changes to your subscription.
